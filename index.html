@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="first">
+        <input class="nickname-input" type="text">
+        <button class="create-room">Создать комнату</button>
+        <button class="code-join-btn">Подключться по коду</button>
+    </div>
+    <div class="second" style="display: none;">
+        <div class="connection-list">
+            <p>Присоединившиеся</p>
+        </div>
+        <select class="round-select" name="" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected="selected">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <input class="drawing-time-input" type="text" value="80">
+        <button class="leave-btn">Выйти</button>
+    </div>
+    <div class="third" style="display: none;">
+        <input class="room-code-input" type="text">
+        <button class="join-room">Подключться</button>
+    </div>
+    <script src="./socket.io.min.js"></script>
+    <script src="./client.js"></script>
+</body>
+</html>
